@@ -16,19 +16,32 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.flexbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .flexheading {
-  height: 5vh;
+  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  margin: 15px 0px 21px 0px;
+  margin: 41px 0px 49px 0px;
+  background-image: linear-gradient(#f1c40f, #cba50b);
+  -webkit-clip-path: polygon(43% 0%, 60% 0%, 30% 80vh, 40% 100%);
+          clip-path: polygon(43% 0%, 60% 0%, 30% 80vh, 40% 100%);
 }
 
 header {
@@ -41,14 +54,9 @@ header .topbar {
   align-items: start;
   justify-content: space-between;
 }
-header .topbar .logo {
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 900;
-  color: aliceblue;
-  position: relative;
-  top: 6px;
-  left: 24px;
+header .topbar .logo img {
+  width: 140px;
+  height: 60px;
   cursor: pointer;
 }
 header .topbar .menu ul {
@@ -91,15 +99,17 @@ header .slider .slider-content button {
   border-top-left-radius: 15%;
   border-bottom-right-radius: 15%;
   background-color: #e74c3c;
-  font-size: 20px;
-  font-weight: 400;
-  color: aliceblue;
   cursor: pointer;
   border-color: #fff;
 }
+header .slider .slider-content button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: aliceblue;
+}
 header .slider .slider-content button:hover {
   background-color: #2ecc71;
-  color: #000;
 }
 
 section {
@@ -201,15 +211,107 @@ section .section-one .bestproduct label {
   }
 }
 section .section-two {
-  height: 90vh;
+  height: 120vh;
 }
 section .section-two .committee {
-  flex-wrap: wrap;
+  height: 45vh;
 }
 section .section-two .committee img {
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
 }
 section .section-two .committee .founder {
-  flex-grow: 1;
+  width: 45vw;
+  position: relative;
+  top: -11vh;
+}
+section .section-two .committee .founder div {
+  margin-left: 20px;
+}
+section .section-two .committee .founder a {
+  text-decoration: none;
+  cursor: pointer;
+}
+section .section-two .committee .founder p {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid red;
+}
+section .section-two .committee .ceo {
+  width: 45vw;
+  position: relative;
+  top: 11vh;
+}
+section .section-two .committee .ceo p {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid red;
+}
+section .section-two .history {
+  background-image: linear-gradient(#ecf0f1, rgba(228, 234, 235, 0.7529411765));
+  height: 45;
+}
+section .section-two .history img {
+  position: relative;
+  top: 3px;
+  height: 15.3vw;
+}
+section .section-two .history .img {
+  width: 45vw;
+}
+section .section-two .history .thehistory {
+  width: 45vw;
+}
+
+footer {
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: #34495e;
+}
+footer width {
+  width: 33vw;
+}
+footer .logo2 {
+  margin-bottom: 5px;
+}
+footer .logo2 img {
+  margin-top: 5px;
+  width: 160px;
+  height: 90px;
+}
+footer .social i {
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+}
+footer .social .facebook {
+  color: #3b5998;
+}
+footer .social .youtube {
+  color: #c4302b;
+}
+footer .social .instagram {
+  color: blue;
+}
+footer .social .twitter {
+  color: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+footer .location {
+  text-align: center;
+  color: #ecf0f1;
+}
+footer .location h3 {
+  border-bottom: 1px dotted #c4302b;
+}
+footer .support {
+  text-align: center;
+  color: #ecf0f1;
+  margin-right: 5vh;
+}
+footer .support h3 {
+  border-bottom: 1px dotted #c4302b;
 }/*# sourceMappingURL=main.css.map */
