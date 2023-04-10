@@ -1,1 +1,5 @@
-/*# sourceMappingURL=main.css.map */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
